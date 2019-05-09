@@ -4,10 +4,10 @@
   tasks: 
   - name: installing looping concept
     apt:
-     name: "{{ item }}" 
+     name: "{{item}}" 
      state: present
-  with_items:
-  - git
-  - tree
-  - wget
-  when: ansible_os_family =="Debian"
+    with_items:
+    - git
+    - tree
+    - wget
+    when: ansible_os_family =="Debian"
